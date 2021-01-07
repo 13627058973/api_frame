@@ -9,6 +9,9 @@
 @Software: PyCharm Community Edition
 """
 
-from common.http_request import HttpRequest as HR
+from common.get_cookies import GetCookie
+
+res = getattr(GetCookie, "cookie")
+print(res)
 
 
