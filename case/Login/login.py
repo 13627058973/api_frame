@@ -9,9 +9,42 @@
 @Software: PyCharm Community Edition
 """
 
-from common.get_cookies import GetCookie
+from common.http_request import HttpRequest
+import unittest
+from common.read_conf import *
+from common.do_excel import DoExcel
+from ddt import ddt, data
 
-res = getattr(GetCookie, "cookie")
-print(res)
+test_date = DoExcel(sheet_file, sheet_name).get_data()
 
+
+@ddt
+class TestLogin(unittest.TestCase):
+
+    def setUp(self):
+        pass
+        self.t = DoExcel(sheet_file, sheet_name)
+
+    @data(*test_date)
+    def test_login(self, item):
+        print("正在执行的用例是 {}".format(item["title"]))
+        res = HttpRequest().http_request(item["url"], eval(item["data"]), item["method"], item["type"])
+        try:
+            self.assertEqual(item["ExpectResult"], res.json()["message"])
+            TestResult = "PASS"  # 如果不报错，测试通过
+        except AssertionError as e:
+            print("接口错误，错误是{}".format(e))
+            TestResult = "Fail"  # 如果报错了，测试不通过
+        finally:  # 不管测试结果是否正确，都把结果写入文件
+            self.t.write_back(item["case_id"] + 1, 8, str(res.json()["message"]))
+            self.t.write_back(item["case_id"] + 1, 9, TestResult)
+
+        # print(res.text)
+
+    def tearDown(self):
+        pass
+
+
+if __name__ == '__main__':
+    unittest.main()
 
