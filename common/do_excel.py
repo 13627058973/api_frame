@@ -37,7 +37,7 @@ class DoExcel:
             data.append(item)
         return data
 
-    def write_back(self, row, columns, value):
+    def write_back(self, row, columns, value):  # 写入文件
         wb = load_workbook(self.file)
         sheet = wb[self.sheet_login]
 

@@ -14,8 +14,13 @@ import os
 BASH_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # 日志的路径
-LOG_PATH = os.path.join(BASH_PATH + r"\result\log")
+LOG_PATH = os.path.join(BASH_PATH, r"result\log")
 # 截图的路径
-IMAGE_PATH = os.path.join(BASH_PATH, r"\result\image")
+IMAGE_PATH = os.path.join(BASH_PATH, r"result\image")
 # 报告的路径
-REPORT_PATH = os.path.join(BASH_PATH, r"\result\report_html")
+REPORT_PATH = os.path.join(BASH_PATH, r"result\report_html")
+print(LOG_PATH, IMAGE_PATH, REPORT_PATH)
+
+a = "111"
+b = os.path.join(a, "333")
+print(b)

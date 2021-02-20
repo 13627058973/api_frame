@@ -8,27 +8,32 @@
 @File    : run.py
 @Software: PyCharm Community Edition
 """
-import json
-from common.http_request import HttpRequest as HR
+from case.Login.login import TestLogin
+import unittest
+import HTMLTestRunnerCN
+import time
+import os
+from common.project_path import *
 
-test_data = [{"data":{"isApp": "false", "usernameOrPhone": "admin", "password": "123456", "rememberMe": "true"},
-              "title": "正常登陆", "method":"post", "expect": 0},
-             {"data":{"isApp": "false", "usernameOrPhone": "admin11", "password": "123456", "rememberMe": "true"},
-              "title": "账号错误", "method":"post", "expect": 5001},
-             {"data":{"isApp": "false", "usernameOrPhone": "admin", "password": "12345678", "rememberMe": "true"},
-              "title": "密码错误", "method":"post", "expect": 5001},
-             {"data":{"isApp": "false", "usernameOrPhone": "admin", "password": "", "rememberMe": "true"},
-              "title": "密码为空", "method":"post", "expect": 1000},
-             {"data":{"isApp": "false", "usernameOrPhone": "", "password": "12345678", "rememberMe": "true"},
-              "title": "账号为空", "method":"post", "expect": 1000}]
+new = time.strftime("%Y-%m-%d")
+# 创建一个测试套件
+suit = unittest.TestSuite()
+# 创建一个用例加载器
+loader = unittest.TestLoader()
+# 加载用例到测试套件中
+suit.addTest(loader.loadTestsFromTestCase(TestLogin))
+
+report_path = os.path.join(REPORT_PATH, new + ".report.html")
+with open(report_path, "wb") as file:
+    runner = HTMLTestRunnerCN.HTMLTestReportCN(file,
+                                               verbosity=2,
+                                               title="登录测试",
+                                               description="框架搭建",
+                                               tester="xhb"
+                                               )
+
+    runner.run(suit)
 
 
-def run():
-    login_url = "http://47.114.59.169:8088/api/api/auth/login"
-    for item_data in test_data:
-        print("正在测试的用例是{}".format(item_data["title"]))
-        res = HR().http_request(login_url, item_data["data"], item_data["method"], "json")
-        print("请求的结果是：", res.text)
 
 
-run()
