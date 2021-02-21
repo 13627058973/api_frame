@@ -12,7 +12,7 @@ from case.Login.login import TestLogin
 import unittest
 import HTMLTestRunnerCN
 import time
-import os
+from common.send_email import SendMail
 from common.project_path import *
 
 new = time.strftime("%Y-%m-%d")
@@ -33,6 +33,10 @@ with open(report_path, "wb") as file:
                                                )
 
     runner.run(suit)
+# 发送邮件
+SendMail().send_mail(report_path)
+
+
 
 
 
