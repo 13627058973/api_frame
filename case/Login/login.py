@@ -14,17 +14,17 @@ import unittest
 from common.read_conf import *
 from common.do_excel import DoExcel
 from ddt import ddt, data
-from common.logger import Mylog
+from common.logger import MyLog
 
-test_date = DoExcel(sheet_file, sheet_name).get_data()
+test_date = DoExcel(DATA_PATH, "login").get_data()
 
 
 @ddt
 class TestLogin(unittest.TestCase):
 
     def setUp(self):
-        self.t = DoExcel(sheet_file, sheet_name)
-        self.logger = Mylog("root")
+        self.t = DoExcel(DATA_PATH, "login")
+        self.logger = MyLog("root")
 
     @data(*test_date)
     def test_login(self, item):

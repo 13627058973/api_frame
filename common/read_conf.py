@@ -10,11 +10,12 @@
 """
 
 import configparser
-
-path_file = r"D:\api_frame\config\config.ini"
+from common.project_path import *
 
 
 cf = configparser.ConfigParser()
-cf.read(path_file)
-sheet_file = cf.get("file", "file_path")
-sheet_name = cf.get("file", "sheet_name")
+cf.read(CONF_PATH)
+# sheet_file = cf.get("file", "file_path")
+# sheet_name = cf.get("file", "sheet_name")
+case = cf.get("mode", "case_data")
+# print(eval(case), type(eval(case)))

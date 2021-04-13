@@ -20,7 +20,8 @@ class SendMail:
     port = 465   # 端口号
     smtp_server = 'smtp.qq.com'  # 发送服务器
     contents = "python接口框架"  # 邮箱正文
-    receiver = ['953561304@qq.com', '1269357308@qq.com']  # 接收人的QQ
+    receiver = ['1269357308@qq.com']  # 接收人的QQ
+    # '953561304@qq.com',
 
     # 发送邮件
     def send_mail(self, email_path):

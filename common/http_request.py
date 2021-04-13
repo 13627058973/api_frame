@@ -14,16 +14,16 @@ import requests
 
 class HttpRequest(object):
     """封装请求方式"""
-    def http_request(self, url, data, method, content_type):
+    def http_request(self, url, data, method, content_type="json"):
         try:
             if method.upper() == "GET":
                 res = requests.get(url, params=data)
             # 如果请求方式是 post，且请求的数据是表单格式的数据
-            elif method.upper() == "POST" and content_type == "form":
-                res = requests.post(url, data=data)
-            # 如果请求的方式是 json,且请求的数据是json格式
-            elif method.upper() == "POST" and content_type == "json":
-                res = requests.post(url, json=data)
+            elif method.upper() == "POST":
+                if content_type == "json":
+                    res = requests.post(url, json=data)
+                elif content_type == "form":
+                    res = requests.post(url, data=data)
 
             else:
                 print("请求方式错误")
@@ -43,4 +43,4 @@ if __name__ == '__main__':
         "rememberMe": "true"
     }
     HR = HttpRequest()
-    HR.http_request(login_url, login_data, "post", "json")
+    print(HR.http_request(login_url, login_data, "post").text)

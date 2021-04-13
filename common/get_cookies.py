@@ -17,7 +17,7 @@ reflect(反射)
 class GetCookie:
 
     cookie = None
-    a = 111
+    token = None
 
 
 if __name__ == '__main__':

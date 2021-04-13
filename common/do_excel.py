@@ -11,6 +11,7 @@
 
 from openpyxl import load_workbook
 from common.read_conf import *
+from common.project_path import *
 
 
 class DoExcel:
@@ -49,8 +50,8 @@ class DoExcel:
 
 
 if __name__ == '__main__':
-    test_data = DoExcel(sheet_file, sheet_name).get_data()
-    DoExcel(sheet_file, sheet_name).write_back(2, 8, "1111")
+    test_data = DoExcel(DATA_PATH, "login").get_data()
+    DoExcel(DATA_PATH, "login").write_back(2, 8, "1111")
     for item in test_data:
         print(item)
 

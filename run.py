@@ -9,6 +9,7 @@
 @Software: PyCharm Community Edition
 """
 from case.Login.login import TestLogin
+from case.Bayonet.add_bayonet import TestBayonet
 import unittest
 import HTMLTestRunnerCN
 import time
@@ -22,6 +23,7 @@ suit = unittest.TestSuite()
 loader = unittest.TestLoader()
 # 加载用例到测试套件中
 suit.addTest(loader.loadTestsFromTestCase(TestLogin))
+suit.addTest(loader.loadTestsFromTestCase(TestBayonet))
 
 report_path = os.path.join(REPORT_PATH, new + ".report.html")
 with open(report_path, "wb") as file:

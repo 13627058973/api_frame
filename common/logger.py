@@ -13,7 +13,7 @@ import time
 from common.project_path import *
 
 
-class Mylog:
+class MyLog:
 
     def __init__(self, log_name):
         self.log_name = log_name
@@ -76,7 +76,7 @@ class Mylog:
 
 
 if __name__ == '__main__':
-    log = Mylog("root")
+    log = MyLog("root")
     log.info("我是个好人")
 
 
