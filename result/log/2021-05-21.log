@@ -1,0 +1,188 @@
+2021-05-21 10:29:52,423-INFO-logger.py-root-日志信息:******************************
+2021-05-21 10:29:52,424-INFO-logger.py-root-日志信息:正在执行的用例是 正常登陆
+2021-05-21 10:29:52,425-INFO-logger.py-root-日志信息:请求的数据是：{"isApp":"false","usernameOrPhone":"admin","password":"123456","rememberMe":"true"}
+2021-05-21 10:29:52,491-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 10:29:52,675-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 10:29:52,677-INFO-logger.py-root-日志信息:******************************
+2021-05-21 10:29:52,678-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的账号
+2021-05-21 10:29:52,680-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "123456", "rememberMe": "true"}
+2021-05-21 10:29:52,821-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 10:29:53,020-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 10:29:53,021-INFO-logger.py-root-日志信息:******************************
+2021-05-21 10:29:53,022-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的密码
+2021-05-21 10:29:53,023-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin", "password": "1234561", "rememberMe": "true"}
+2021-05-21 10:29:53,085-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 10:29:53,247-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 10:29:53,248-INFO-logger.py-root-日志信息:******************************
+2021-05-21 10:29:53,249-INFO-logger.py-root-日志信息:正在执行的用例是 账号为空
+2021-05-21 10:29:53,250-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "", "password": "123456", "rememberMe": "true"}
+2021-05-21 10:29:53,310-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 10:29:53,467-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 10:29:53,468-INFO-logger.py-root-日志信息:******************************
+2021-05-21 10:29:53,469-INFO-logger.py-root-日志信息:正在执行的用例是 密码为空
+2021-05-21 10:29:53,471-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "", "rememberMe": "true"}
+2021-05-21 10:29:53,520-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 10:29:53,688-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 10:29:53,690-INFO-logger.py-root-日志信息:***********************
+2021-05-21 10:29:53,691-INFO-logger.py-root-日志信息:正在执行的用例是添加卡口
+2021-05-21 10:29:53,692-INFO-logger.py-root-日志信息:请求的数据是：{"longitude":"115.89230","latitude":"28.676945","bayonetName":"大门","coords":"115.89230,28.676945","spatialCoordinateType":"BD-09","territoryId":"7","borderGps":"115.892771,28.677151|115.893831,28.676937","boundary":[["115.892771,28.677151"],["115.893831,28.676937"]]}
+2021-05-21 10:29:53,766-INFO-logger.py-root-日志信息:接口返回的结果是{'code': -1, 'message': '卡口名称已存在！'}
+2021-05-21 10:29:53,768-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 10:29:53,931-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 10:29:53,932-INFO-logger.py-root-日志信息:***********************
+2021-05-21 10:29:53,934-INFO-logger.py-root-日志信息:正在执行的用例是编辑卡口
+2021-05-21 10:29:53,935-INFO-logger.py-root-日志信息:请求的数据是：{"bayonetName":"大门1","coords":"115.89230,28.676945","spatialCoordinateType":"BD-09","territoryId":7,"id":52,"boundary":[["115.892771,28.677151"],["115.893831,28.676937"]],"borderGps":"115.892771,28.677151|115.893831,28.676937","latitude":"28.676945","longitude":"115.89230","territoryName":"百胜智能园区"}
+2021-05-21 10:29:54,008-INFO-logger.py-root-日志信息:接口返回的结果是{'code': 0, 'message': '操作成功'}
+2021-05-21 10:29:54,009-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 10:29:54,176-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 10:29:54,178-INFO-logger.py-root-日志信息:***********************
+2021-05-21 10:29:54,179-INFO-logger.py-root-日志信息:正在执行的用例是删除卡口
+2021-05-21 10:29:54,180-INFO-logger.py-root-日志信息:请求的数据是：{"id":${id}}
+2021-05-21 15:14:26,015-INFO-logger.py-root-日志信息:******************************
+2021-05-21 15:14:26,018-INFO-logger.py-root-日志信息:正在执行的用例是 正常登陆
+2021-05-21 15:14:26,019-INFO-logger.py-root-日志信息:请求的数据是：{"isApp":"false","usernameOrPhone":"admin","password":"123456","rememberMe":"true"}
+2021-05-21 15:14:26,082-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:14:26,140-INFO-logger.py-root-日志信息:******************************
+2021-05-21 15:14:26,141-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的账号
+2021-05-21 15:14:26,143-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "123456", "rememberMe": "true"}
+2021-05-21 15:14:26,280-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:14:26,319-INFO-logger.py-root-日志信息:******************************
+2021-05-21 15:14:26,320-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的密码
+2021-05-21 15:14:26,322-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin", "password": "1234561", "rememberMe": "true"}
+2021-05-21 15:14:26,389-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:14:26,429-INFO-logger.py-root-日志信息:******************************
+2021-05-21 15:14:26,430-INFO-logger.py-root-日志信息:正在执行的用例是 账号为空
+2021-05-21 15:14:26,432-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "", "password": "123456", "rememberMe": "true"}
+2021-05-21 15:14:26,485-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:14:26,537-INFO-logger.py-root-日志信息:******************************
+2021-05-21 15:14:26,538-INFO-logger.py-root-日志信息:正在执行的用例是 密码为空
+2021-05-21 15:14:26,539-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "", "rememberMe": "true"}
+2021-05-21 15:14:26,589-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:14:26,630-INFO-logger.py-root-日志信息:***********************
+2021-05-21 15:14:26,631-INFO-logger.py-root-日志信息:正在执行的用例是添加卡口
+2021-05-21 15:14:26,632-INFO-logger.py-root-日志信息:请求的数据是：{"longitude":"115.89230","latitude":"28.676945","bayonetName":"大门","coords":"115.89230,28.676945","spatialCoordinateType":"BD-09","territoryId":"7","borderGps":"115.892771,28.677151|115.893831,28.676937","boundary":[["115.892771,28.677151"],["115.893831,28.676937"]]}
+2021-05-21 15:14:26,721-INFO-logger.py-root-日志信息:接口返回的结果是{'code': -1, 'message': '卡口名称已存在！'}
+2021-05-21 15:14:26,722-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:14:26,765-INFO-logger.py-root-日志信息:***********************
+2021-05-21 15:14:26,766-INFO-logger.py-root-日志信息:正在执行的用例是编辑卡口
+2021-05-21 15:14:26,767-INFO-logger.py-root-日志信息:请求的数据是：{"bayonetName":"大门1","coords":"115.89230,28.676945","spatialCoordinateType":"BD-09","territoryId":7,"id":52,"boundary":[["115.892771,28.677151"],["115.893831,28.676937"]],"borderGps":"115.892771,28.677151|115.893831,28.676937","latitude":"28.676945","longitude":"115.89230","territoryName":"百胜智能园区"}
+2021-05-21 15:14:26,833-INFO-logger.py-root-日志信息:接口返回的结果是{'code': 0, 'message': '操作成功'}
+2021-05-21 15:14:26,835-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:14:26,873-INFO-logger.py-root-日志信息:***********************
+2021-05-21 15:14:26,874-INFO-logger.py-root-日志信息:正在执行的用例是删除卡口
+2021-05-21 15:14:26,875-INFO-logger.py-root-日志信息:请求的数据是：{"id":${id}}
+2021-05-21 15:15:51,377-INFO-logger.py-root-日志信息:******************************
+2021-05-21 15:15:51,378-INFO-logger.py-root-日志信息:正在执行的用例是 正常登陆
+2021-05-21 15:15:51,379-INFO-logger.py-root-日志信息:请求的数据是：{"isApp":"false","usernameOrPhone":"admin","password":"123456","rememberMe":"true"}
+2021-05-21 15:15:51,452-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:15:51,623-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 15:15:51,624-INFO-logger.py-root-日志信息:******************************
+2021-05-21 15:15:51,625-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的账号
+2021-05-21 15:15:51,626-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "123456", "rememberMe": "true"}
+2021-05-21 15:15:51,765-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:15:51,924-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 15:15:51,925-INFO-logger.py-root-日志信息:******************************
+2021-05-21 15:15:51,926-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的密码
+2021-05-21 15:15:51,927-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin", "password": "1234561", "rememberMe": "true"}
+2021-05-21 15:15:51,982-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:15:52,142-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 15:15:52,144-INFO-logger.py-root-日志信息:******************************
+2021-05-21 15:15:52,145-INFO-logger.py-root-日志信息:正在执行的用例是 账号为空
+2021-05-21 15:15:52,146-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "", "password": "123456", "rememberMe": "true"}
+2021-05-21 15:15:52,192-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:15:52,347-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 15:15:52,349-INFO-logger.py-root-日志信息:******************************
+2021-05-21 15:15:52,351-INFO-logger.py-root-日志信息:正在执行的用例是 密码为空
+2021-05-21 15:15:52,352-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "", "rememberMe": "true"}
+2021-05-21 15:15:52,400-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:15:52,561-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 15:15:52,562-INFO-logger.py-root-日志信息:***********************
+2021-05-21 15:15:52,564-INFO-logger.py-root-日志信息:正在执行的用例是添加卡口
+2021-05-21 15:15:52,565-INFO-logger.py-root-日志信息:请求的数据是：{"longitude":"115.89230","latitude":"28.676945","bayonetName":"大门","coords":"115.89230,28.676945","spatialCoordinateType":"BD-09","territoryId":"7","borderGps":"115.892771,28.677151|115.893831,28.676937","boundary":[["115.892771,28.677151"],["115.893831,28.676937"]]}
+2021-05-21 15:15:52,635-INFO-logger.py-root-日志信息:接口返回的结果是{'code': -1, 'message': '卡口名称已存在！'}
+2021-05-21 15:15:52,636-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:15:52,790-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 15:15:52,791-INFO-logger.py-root-日志信息:***********************
+2021-05-21 15:15:52,792-INFO-logger.py-root-日志信息:正在执行的用例是编辑卡口
+2021-05-21 15:15:52,792-INFO-logger.py-root-日志信息:请求的数据是：{"bayonetName":"大门1","coords":"115.89230,28.676945","spatialCoordinateType":"BD-09","territoryId":7,"id":52,"boundary":[["115.892771,28.677151"],["115.893831,28.676937"]],"borderGps":"115.892771,28.677151|115.893831,28.676937","latitude":"28.676945","longitude":"115.89230","territoryName":"百胜智能园区"}
+2021-05-21 15:15:52,857-INFO-logger.py-root-日志信息:接口返回的结果是{'code': 0, 'message': '操作成功'}
+2021-05-21 15:15:52,858-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 15:15:53,021-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 15:15:53,022-INFO-logger.py-root-日志信息:***********************
+2021-05-21 15:15:53,023-INFO-logger.py-root-日志信息:正在执行的用例是删除卡口
+2021-05-21 15:15:53,024-INFO-logger.py-root-日志信息:请求的数据是：{"id":${id}}
+2021-05-21 16:00:53,927-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-21 16:00:53,950-INFO-logger.py-root-日志信息:正在执行的用例是 正常登陆
+2021-05-21 16:00:53,951-INFO-logger.py-root-日志信息:请求的数据是：{"isApp":"false","usernameOrPhone":"admin","password":"123456","rememberMe":"true"}
+2021-05-21 16:00:54,023-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 16:00:54,178-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 16:00:54,179-INFO-logger.py-root-日志信息:************TearDown**************
+2021-05-21 16:00:54,181-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-21 16:00:54,182-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的账号
+2021-05-21 16:00:54,183-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "123456", "rememberMe": "true"}
+2021-05-21 16:00:54,312-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 16:00:54,461-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 16:00:54,463-INFO-logger.py-root-日志信息:************TearDown**************
+2021-05-21 16:00:54,464-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-21 16:00:54,465-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的密码
+2021-05-21 16:00:54,467-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin", "password": "1234561", "rememberMe": "true"}
+2021-05-21 16:00:54,533-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 16:00:54,684-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 16:00:54,685-INFO-logger.py-root-日志信息:************TearDown**************
+2021-05-21 16:00:54,687-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-21 16:00:54,688-INFO-logger.py-root-日志信息:正在执行的用例是 账号为空
+2021-05-21 16:00:54,689-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "", "password": "123456", "rememberMe": "true"}
+2021-05-21 16:00:54,737-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 16:00:54,890-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 16:00:54,892-INFO-logger.py-root-日志信息:************TearDown**************
+2021-05-21 16:00:54,893-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-21 16:00:54,895-INFO-logger.py-root-日志信息:正在执行的用例是 密码为空
+2021-05-21 16:00:54,896-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "", "rememberMe": "true"}
+2021-05-21 16:00:54,945-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 16:00:55,120-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 16:00:55,122-INFO-logger.py-root-日志信息:************TearDown**************
+2021-05-21 16:01:19,244-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-21 16:01:19,245-INFO-logger.py-root-日志信息:正在执行的用例是 正常登陆
+2021-05-21 16:01:19,246-INFO-logger.py-root-日志信息:请求的数据是：{"isApp":"false","usernameOrPhone":"admin","password":"123456","rememberMe":"true"}
+2021-05-21 16:01:19,317-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 16:01:19,474-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 16:01:19,475-INFO-logger.py-root-日志信息:************TearDown**************
+2021-05-21 16:01:19,477-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-21 16:01:19,478-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的账号
+2021-05-21 16:01:19,479-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "123456", "rememberMe": "true"}
+2021-05-21 16:01:19,612-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 16:01:19,765-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 16:01:19,766-INFO-logger.py-root-日志信息:************TearDown**************
+2021-05-21 16:01:19,767-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-21 16:01:19,768-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的密码
+2021-05-21 16:01:19,769-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin", "password": "1234561", "rememberMe": "true"}
+2021-05-21 16:01:19,826-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 16:01:19,981-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 16:01:19,982-INFO-logger.py-root-日志信息:************TearDown**************
+2021-05-21 16:01:19,983-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-21 16:01:19,985-INFO-logger.py-root-日志信息:正在执行的用例是 账号为空
+2021-05-21 16:01:19,986-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "", "password": "123456", "rememberMe": "true"}
+2021-05-21 16:01:20,041-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 16:01:20,191-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 16:01:20,192-INFO-logger.py-root-日志信息:************TearDown**************
+2021-05-21 16:01:20,193-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-21 16:01:20,194-INFO-logger.py-root-日志信息:正在执行的用例是 密码为空
+2021-05-21 16:01:20,195-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "", "rememberMe": "true"}
+2021-05-21 16:01:20,249-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 16:01:20,414-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 16:01:20,415-INFO-logger.py-root-日志信息:************TearDown**************
+2021-05-21 16:01:20,416-INFO-logger.py-root-日志信息:***********************
+2021-05-21 16:01:20,417-INFO-logger.py-root-日志信息:正在执行的用例是添加卡口
+2021-05-21 16:01:20,418-INFO-logger.py-root-日志信息:请求的数据是：{"longitude":"115.89230","latitude":"28.676945","bayonetName":"大门","coords":"115.89230,28.676945","spatialCoordinateType":"BD-09","territoryId":"7","borderGps":"115.892771,28.677151|115.893831,28.676937","boundary":[["115.892771,28.677151"],["115.893831,28.676937"]]}
+2021-05-21 16:01:20,493-INFO-logger.py-root-日志信息:接口返回的结果是{'code': -1, 'message': '卡口名称已存在！'}
+2021-05-21 16:01:20,495-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 16:01:20,652-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 16:01:20,654-INFO-logger.py-root-日志信息:***********************
+2021-05-21 16:01:20,655-INFO-logger.py-root-日志信息:正在执行的用例是编辑卡口
+2021-05-21 16:01:20,656-INFO-logger.py-root-日志信息:请求的数据是：{"bayonetName":"大门1","coords":"115.89230,28.676945","spatialCoordinateType":"BD-09","territoryId":7,"id":52,"boundary":[["115.892771,28.677151"],["115.893831,28.676937"]],"borderGps":"115.892771,28.677151|115.893831,28.676937","latitude":"28.676945","longitude":"115.89230","territoryName":"百胜智能园区"}
+2021-05-21 16:01:20,721-INFO-logger.py-root-日志信息:接口返回的结果是{'code': 0, 'message': '操作成功'}
+2021-05-21 16:01:20,722-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-21 16:01:20,872-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-21 16:01:20,873-INFO-logger.py-root-日志信息:***********************
+2021-05-21 16:01:20,875-INFO-logger.py-root-日志信息:正在执行的用例是删除卡口
+2021-05-21 16:01:20,876-INFO-logger.py-root-日志信息:请求的数据是：{"id":${id}}

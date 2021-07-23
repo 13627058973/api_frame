@@ -1,0 +1,23 @@
+2021-05-25 10:29:49,310-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-25 10:29:49,334-INFO-logger.py-root-日志信息:正在执行的用例是 正常登陆
+2021-05-25 10:29:49,335-INFO-logger.py-root-日志信息:请求的数据是：{"isApp":"false","usernameOrPhone":"admin","password":"123456","rememberMe":"true"}
+2021-05-25 10:30:10,351-INFO-logger.py-root-日志信息:********TearDown**********
+2021-05-25 10:30:10,381-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-25 10:30:10,383-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的账号
+2021-05-25 10:30:10,388-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "123456", "rememberMe": "true"}
+2021-05-25 10:30:31,396-INFO-logger.py-root-日志信息:********TearDown**********
+2021-05-25 10:30:31,413-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-25 10:30:31,415-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的密码
+2021-05-25 10:30:31,416-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin", "password": "1234561", "rememberMe": "true"}
+2021-05-25 10:30:52,422-INFO-logger.py-root-日志信息:********TearDown**********
+2021-05-25 10:30:52,435-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-25 10:30:52,437-INFO-logger.py-root-日志信息:正在执行的用例是 账号为空
+2021-05-25 10:30:52,438-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "", "password": "123456", "rememberMe": "true"}
+2021-05-25 10:31:13,444-INFO-logger.py-root-日志信息:********TearDown**********
+2021-05-25 10:31:13,457-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-25 10:31:13,460-INFO-logger.py-root-日志信息:正在执行的用例是 密码为空
+2021-05-25 10:31:13,463-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "", "rememberMe": "true"}
+2021-05-25 10:31:34,473-INFO-logger.py-root-日志信息:********TearDown**********
+2021-05-25 10:31:34,483-INFO-logger.py-root-日志信息:********SetUp***********
+2021-05-25 10:31:34,485-INFO-logger.py-root-日志信息:正在执行的用例是 添加卡口
+2021-05-25 10:31:34,487-INFO-logger.py-root-日志信息:请求的数据是：{"longitude":"115.89230","latitude":"28.676945","bayonetName":"大门","coords":"115.89230,28.676945","spatialCoordinateType":"BD-09","territoryId":"7","borderGps":"115.892771,28.677151|115.893831,28.676937","boundary":[["115.892771,28.677151"],["115.893831,28.676937"]]}

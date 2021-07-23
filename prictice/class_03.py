@@ -14,7 +14,7 @@ from common.project_path import *
 import unittest
 from ddt import ddt, data
 from common.logger import MyLog
-from common.get_cookies import GetCookie
+from common.get_data import GetCookie
 from common.get_token import GetToken
 
 Data = DoExcel(DATA_PATH, "bayonet").get_data()

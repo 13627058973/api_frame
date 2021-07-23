@@ -1,0 +1,25 @@
+2021-05-18 16:48:55,089-INFO-logger.py-root-日志信息:******************************
+2021-05-18 16:48:55,091-INFO-logger.py-root-日志信息:正在执行的用例是 正常登陆
+2021-05-18 16:48:55,092-INFO-logger.py-root-日志信息:请求的数据是：{"isApp":"false","usernameOrPhone":"admin","password":"123456","rememberMe":"true"}
+2021-05-18 16:48:55,449-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-18 16:48:55,650-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-18 16:48:55,651-INFO-logger.py-root-日志信息:******************************
+2021-05-18 16:48:55,658-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的账号
+2021-05-18 16:48:55,659-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "123456", "rememberMe": "true"}
+2021-05-18 16:48:55,790-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-18 16:48:55,980-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-18 16:48:55,981-INFO-logger.py-root-日志信息:******************************
+2021-05-18 16:48:55,983-INFO-logger.py-root-日志信息:正在执行的用例是 输入错误的密码
+2021-05-18 16:48:55,984-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin", "password": "1234561", "rememberMe": "true"}
+2021-05-18 16:48:56,049-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-18 16:48:56,318-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-18 16:48:56,320-INFO-logger.py-root-日志信息:******************************
+2021-05-18 16:48:56,320-INFO-logger.py-root-日志信息:正在执行的用例是 账号为空
+2021-05-18 16:48:56,322-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "", "password": "123456", "rememberMe": "true"}
+2021-05-18 16:48:56,371-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-18 16:48:56,585-INFO-logger.py-root-日志信息:*********结束写入数据********
+2021-05-18 16:48:56,586-INFO-logger.py-root-日志信息:******************************
+2021-05-18 16:48:56,587-INFO-logger.py-root-日志信息:正在执行的用例是 密码为空
+2021-05-18 16:48:56,589-INFO-logger.py-root-日志信息:请求的数据是：{"isApp": "false", "usernameOrPhone": "admin11", "password": "", "rememberMe": "true"}
+2021-05-18 16:48:56,639-INFO-logger.py-root-日志信息:*********开始写入结果********
+2021-05-18 16:48:56,857-INFO-logger.py-root-日志信息:*********结束写入数据********

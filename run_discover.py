@@ -18,11 +18,11 @@ file = r"D:\api_frame\result\report_html"
 testcase = unittest.TestSuite()
 
 discover = unittest.defaultTestLoader.discover(".")
-
+print(discover)
 # discover 加载的用例循环加入测试套件中
-for test_suit in discover:
-    for test_case in test_suit:
-        testcase.addTests(test_case)
+# for test_suit in discover:
+#     for test_case in test_suit:
+#         testcase.addTest(test_case)
 
 runner = unittest.TextTestRunner()
 runner.run(discover)

@@ -13,6 +13,10 @@ import unittest
 import requests
 
 """添加卡口测试用例"""
+token = None
+"""
+self.assertEqual("预期结果", "实际结果")
+"""
 
 
 class TestBayonet(unittest.TestCase):
@@ -32,7 +36,10 @@ class TestBayonet(unittest.TestCase):
                 "boundary": [["115.892771,28.677151"], ["115.893831,28.676937"]]}
         header = {"token": globals()["token"]}
         result = requests.post(url, json=data, headers=header)
-        print(result.text)
+        self.assertEqual("添加成功", result.json()["message"])
+
+    def test_repetition(self):  # 添加重复的卡口
+        pass
 
 
 if __name__ == '__main__':
