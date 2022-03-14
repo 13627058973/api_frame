@@ -8,27 +8,44 @@
 @File    : test_login.py
 @Software: PyCharm Community Edition
 """
-import json
+import time, os
+import pytest
+from common.logger import MyLog
+from common.project_path import *
 from common.http_request import HttpRequest as HR
 
-test_data = [{"data":{"isApp": "false", "usernameOrPhone": "admin", "password": "123456", "rememberMe": "true"},
+data_info = [{"data": {"username": "xhb_user","password": "xhb123..A"},
               "title": "正常登陆", "method":"post", "expect": 0},
-             {"data":{"isApp": "false", "usernameOrPhone": "admin11", "password": "123456", "rememberMe": "true"},
-              "title": "账号错误", "method":"post", "expect": 5001},
-             {"data":{"isApp": "false", "usernameOrPhone": "admin", "password": "12345678", "rememberMe": "true"},
-              "title": "密码错误", "method":"post", "expect": 5001},
-             {"data":{"isApp": "false", "usernameOrPhone": "admin", "password": "", "rememberMe": "true"},
-              "title": "密码为空", "method":"post", "expect": 1000},
-             {"data":{"isApp": "false", "usernameOrPhone": "", "password": "12345678", "rememberMe": "true"},
-              "title": "账号为空", "method":"post", "expect": 1000}]
+             {"data":{"username": "xhb_user","password": "xhb123..A"},
+              "title": "账号错误", "method":"post", "expect": 500},
+             {"data":{"username": "xhb_user","password": "xhb123..A"},
+              "title": "密码错误", "method":"post", "expect": 500},
+             {"data":{"username": "xhb_user","password": "xhb123..A"},
+              "title": "密码为空", "method":"post", "expect": 500},
+             {"data":{"username": "xhb_user","password": "xhb123..A"},
+              "title": "账号为空", "method":"post", "expect": 500}]
+
+url = "http://121.196.225.143/prod-api/login"
 
 
-def run():
-    login_url = "http://47.114.59.169:8088/api/api/auth/login"
-    for item_data in test_data:
-        print("正在测试的用例是{}".format(item_data["title"]))
-        res = HR().http_request(login_url, item_data["data"], item_data["method"], "json")
-        print("请求的结果是：", res.text)
+# 清除日志文件
+# @pytest.fixture()
+# def clear_info():
+#     new = time.strftime("%Y-%m-%d")  # 获取到了当天的时间
+#     log_path = LOG_PATH + "/" + new + ".log"
+#     if log_path:
+#         os.remove(log_path)
+#     else:
+#         print("今天第一次生成日志")
 
 
-run()
+class TestCase:
+
+    # @pytest.mark.usefixtures("clear_info")
+    @pytest.mark.usefixtures("session_fixture")
+    @pytest.mark.usefixtures("class_fixture")
+    @pytest.mark.usefixtures("my_function")
+    @pytest.mark.parametrize("data", data_info)
+    def test_case(self, data):
+        res = HR().http_request(data["method"], url, data["data"])
+        print(res, 111)
